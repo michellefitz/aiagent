@@ -12,7 +12,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #0A2540;
+    background-color: #1A1E22;
     color: #FFFFFF;
     padding: 1.5rem 0;
     text-align: center;
@@ -32,7 +32,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #0A2540;
+    background-color: #1A1E22;
 }
 
 nav ul li {
@@ -49,7 +49,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #FF5A5F;
+    background-color: #00FFCC;
 }
 
 /* Main Content Styling */
@@ -69,7 +69,7 @@ main p {
 
 /* Button Styling */
 button {
-    background-color: #FF5A5F;
+    background-color: #0066FF;
     color: #FFFFFF;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -81,13 +81,13 @@ button {
 }
 
 button:hover {
-    background-color: #E14C4F;
+    background-color: #0055CC;
     transform: translateY(-2px);
 }
 
 /* Footer Styling */
 footer {
-    background-color: #0A2540;
+    background-color: #1A1E22;
     color: #FFFFFF;
     text-align: center;
     padding: 1rem 0;
