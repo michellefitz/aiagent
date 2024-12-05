@@ -55,9 +55,10 @@ nav ul li a:hover {
 /* Slideshow Container Styling */
 .slideshow-container {
     position: relative;
-    width: 100%;
+    width: 70%; /* Set width to 70% of the page */
+    max-width: 1200px; /* Add a max-width for larger screens */
     min-height: 500px; /* Adjust this height to match your images */
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container on the page */
     overflow: hidden; /* Prevents elements from spilling out */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -143,6 +144,7 @@ footer {
     }
 
     .slideshow-container {
+        width: 90%; /* Use more screen width on smaller devices */
         min-height: 300px; /* Reduce slideshow height for smaller screens */
     }
 
