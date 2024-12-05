@@ -119,6 +119,7 @@ footer {
 /* Make images responsive */
 img {
     max-width: 100%; /* Prevents images from exceeding the width of their container */
+    min-height: 100% /*make tall
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Removes inline whitespace (optional) */
     margin: 0 auto; /* Centers the image within its container (optional) */
