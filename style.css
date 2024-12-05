@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 /* Main Content Styling */
 main {
-    max-width: 1200px;
+    max-width: 768px;
     margin: 2rem auto;
     padding: 1rem;
     background-color: #FFFFFF;
