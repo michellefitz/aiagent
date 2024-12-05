@@ -1,6 +1,7 @@
 /* Importing the 'Inter' font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+/* General Styling */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F6F9FC;
@@ -10,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
 header {
     background-color: #1A1E22;
     color: #FFFFFF;
@@ -52,108 +52,31 @@ nav ul li a:hover {
     background-color: #00FFCC;
 }
 
-/* Main Content Styling */
-main {
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-main p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Button Styling */
-button {
-    background-color: #0066FF;
-    color: #FFFFFF;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-    background-color: #0055CC;
-    transform: translateY(-2px);
-}
-
-/* Footer Styling */
-footer {
-    background-color: #1A1E22;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    main {
-        margin: 1rem;
-        padding: 1rem;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Make images responsive */
-img {
-    max-width: 100%; /* Prevents images from exceeding the width of their container */
-    min-height: 100% /*make tall
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Removes inline whitespace (optional) */
-    margin: 0 auto; /* Centers the image within its container (optional) */
-}
-
-/* Add specific styling for images in the slideshow */
-.slideshow-container img {
-    width: 100%; /* Makes the slideshow images fit their container */
-    max-height: 500px; /* Limits height to avoid overly large images */
-    object-fit: cover; /* Ensures images maintain their proportions */
-}
-
-
-/* Slideshow Container */
+/* Slideshow Container Styling */
 .slideshow-container {
     position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
+    width: 100%;
+    min-height: 500px; /* Adjust this height to match your images */
+    margin: 0 auto;
+    overflow: hidden; /* Prevents elements from spilling out */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Slides */
+.slideshow-container img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
 .slide {
     display: none;
     position: relative;
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
+    max-height: 100%;
+    object-fit: cover; /* Ensures images are cropped evenly */
 }
 
 /* Navigation Arrows */
@@ -192,4 +115,38 @@ img {
 @keyframes fadeEffect {
     from { opacity: 0.4; }
     to { opacity: 1; }
+}
+
+/* Footer Styling */
+footer {
+    position: relative; /* Ensures footer stays below the content */
+    width: 100%;
+    padding: 1rem;
+    background-color: #1A1E22;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Add margin to separate slideshow from footer */
+.slideshow-container {
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .slideshow-container {
+        min-height: 300px; /* Reduce slideshow height for smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
