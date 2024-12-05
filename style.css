@@ -116,6 +116,22 @@ footer {
     }
 }
 
+/* Make images responsive */
+img {
+    max-width: 100%; /* Prevents images from exceeding the width of their container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes inline whitespace (optional) */
+    margin: 0 auto; /* Centers the image within its container (optional) */
+}
+
+/* Add specific styling for images in the slideshow */
+.slideshow-container img {
+    width: 100%; /* Makes the slideshow images fit their container */
+    max-height: 500px; /* Limits height to avoid overly large images */
+    object-fit: cover; /* Ensures images maintain their proportions */
+}
+
+
 /* Slideshow Container */
 .slideshow-container {
     position: relative;
